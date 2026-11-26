@@ -16,12 +16,17 @@ public class CitaMedica implements Persistible, Notificable {
 
     @Override
     public boolean guardar() {
-        // TODO [Issue #1 - Integrante 1]: Imprimir aviso de registro de cita y retornar true.
-        return false;
+        System.out.println("Cita registrada: " + paciente + " | " + especialidad + " | " + fechaHora);
+        return true;
     }
 
     @Override
     public void enviarNotificacion(String destino) {
-        // TODO [Issue #1 - Integrante 1]: Imprimir recordatorio de cita enviado al destino indicado.
+        if (destino == null || destino.isBlank()) {
+            System.out.println("No se puede enviar el recordatorio: destino vacío.");
+            return;
+        }
+        System.out.println("Recordatorio de cita enviado a " + destino + ": "
+                + paciente + " - " + especialidad + " (" + fechaHora + ")");
     }
 }
