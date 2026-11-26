@@ -12,9 +12,18 @@ public class Main {
         CitaMedica cita = new CitaMedica("Paciente 1", "Medicina General", "26/11/2026 09:00");
         HistorialClinico historial = new HistorialClinico("Paciente 1", "Control preventivo anual");
 
-        // TODO [Issue #4 - Integrante 4]: Ejecutar exportacion, guardado y notificaciones con ServicioClinico.
+        // Pruebas desacopladas mediante ServicioClinico
+        System.out.println("=== PRUEBAS DE EXPORTACIÓN ===");
         servicio.procesarExportacion(receta);
-        servicio.procesarGuardado(cita);
         servicio.procesarExportacion(historial);
+
+        System.out.println("\n=== PRUEBAS DE GUARDADO ===");
+        servicio.procesarGuardado(cita);
+        servicio.procesarGuardado(receta);
+        servicio.procesarGuardado(historial);
+
+        System.out.println("\n=== PRUEBAS DE NOTIFICACIÓN ===");
+        servicio.despacharAviso(cita, "paciente1@correo.com");
+        servicio.despacharAviso(receta, "+593987654321");
     }
 }
