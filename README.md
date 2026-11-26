@@ -9,10 +9,10 @@
 4. Revisar cruzadamente y fusionar todo en `main` antes de los 10 minutos de sustentación.
 
 ## Reparto de Issues
-- **Issue #1 (Integrante 1):** Verificar/documentar interfaces (`Exportable`, `Persistible`, `Notificable`) y completar `CitaMedica.java`.
-- **Issue #2 (Integrante 2):** Completar `RecetaMedica.java` con implementación múltiple de las 3 interfaces.
-- **Issue #3 (Integrante 3):** Completar `HistorialClinico.java` implementando `Exportable` y `Persistible`.
-- **Issue #4 (Integrante 4):** Completar `ServicioClinico.java` (desacoplado por interfaces) y pruebas en `Main.java`.
+- **Issue #1 (Geovanny Ríos):** Verificar/documentar interfaces (`Exportable`, `Persistible`, `Notificable`) y completar `CitaMedica.java`.
+- **Issue #2 (Sylvia Sánchez):** Completar `RecetaMedica.java` con implementación múltiple de las 3 interfaces.
+- **Issue #3 (Alex Vásquez):** Completar `HistorialClinico.java` implementando `Exportable` y `Persistible`.
+- **Issue #4 (Alex Vásquez):** Completar `ServicioClinico.java` (desacoplado por interfaces) y pruebas en `Main.java`.
 
 ## Compilación y Ejecución
 
