@@ -7,14 +7,15 @@ import interfaces.Persistible;
 public class ServicioClinico {
 
     public void procesarExportacion(Exportable documento) {
-        // TODO [Issue #4 - Integrante 4]: Imprimir documento.exportar().
+        System.out.println("Exportando documento: " + documento.exportar());
     }
 
     public void procesarGuardado(Persistible registro) {
-        // TODO [Issue #4 - Integrante 4]: Llamar a registro.guardar() e imprimir resultado booleano.
+        boolean resultado = registro.guardar();
+        System.out.println("Resultado de guardado: " + resultado);
     }
 
     public void despacharAviso(Notificable aviso, String destino) {
-        // TODO [Issue #4 - Integrante 4]: Invocar aviso.enviarNotificacion(destino).
+        aviso.enviarNotificacion(destino);
     }
 }
