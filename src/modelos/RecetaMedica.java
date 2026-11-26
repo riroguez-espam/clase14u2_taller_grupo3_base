@@ -17,18 +17,17 @@ public class RecetaMedica implements Exportable, Persistible, Notificable {
 
     @Override
     public String exportar() {
-        // TODO [Issue #2 - Integrante 2]: Retornar la receta formateada con codigo, paciente y medicamento.
-        return "PENDIENTE_RECETA";
+        return "Receta [" + codigo + "] - Paciente: " + paciente + " | Medicamento: " + medicamento;
     }
 
     @Override
     public boolean guardar() {
-        // TODO [Issue #2 - Integrante 2]: Imprimir aviso de guardado de receta y retornar true.
-        return false;
+        System.out.println("Receta médica " + codigo + " guardada en el sistema.");
+        return true;
     }
 
     @Override
     public void enviarNotificacion(String destino) {
-        // TODO [Issue #2 - Integrante 2]: Imprimir aviso de envio de receta digital al destino.
+        System.out.println("Enviando receta digital " + codigo + " al destino: " + destino);
     }
 }
