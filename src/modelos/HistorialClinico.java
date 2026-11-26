@@ -14,13 +14,12 @@ public class HistorialClinico implements Exportable, Persistible {
 
     @Override
     public String exportar() {
-        // TODO [Issue #3 - Integrante 3]: Retornar el historial clinico en formato JSON o PDF textual.
-        return "PENDIENTE_HISTORIAL";
+        return "Historial Clinico [Paciente: " + paciente + ", Diagnostico: " + diagnostico + "]";
     }
 
     @Override
     public boolean guardar() {
-        // TODO [Issue #3 - Integrante 3]: Imprimir confirmacion de guardado del historial y retornar true.
-        return false;
+        System.out.println("Historial clinico de " + paciente + " guardado exitosamente.");
+        return true;
     }
 }
